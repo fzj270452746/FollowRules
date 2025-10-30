@@ -1,0 +1,4723 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ZunzhxGuzie",
+    "printedName": "ZunzhxGuzie",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZunzhxGuzie"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ZunzhxGuzie"
+      },
+      {
+        "kind": "Function",
+        "name": "XusoingTysd",
+        "printedName": "XusoingTysd(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11ZunzhxGuzie11XusoingTysdySSSgSSF",
+        "mangledName": "$s11ZunzhxGuzie11XusoingTysdySSSgSSF",
+        "moduleName": "ZunzhxGuzie",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Var",
+        "name": "kFnacgyi",
+        "printedName": "kFnacgyi",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:11ZunzhxGuzie8kFnacgyiSSvp",
+        "mangledName": "$s11ZunzhxGuzie8kFnacgyiSSvp",
+        "moduleName": "ZunzhxGuzie",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "isLet": true,
+        "hasStorage": true
+      },
+      {
+        "kind": "Var",
+        "name": "kXianchuysn",
+        "printedName": "kXianchuysn",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:11ZunzhxGuzie11kXianchuysnSSvp",
+        "mangledName": "$s11ZunzhxGuzie11kXianchuysnSSvp",
+        "moduleName": "ZunzhxGuzie",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "isLet": true,
+        "hasStorage": true
+      },
+      {
+        "kind": "Var",
+        "name": "kTiaoliangc",
+        "printedName": "kTiaoliangc",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:11ZunzhxGuzie11kTiaoliangcSSvp",
+        "mangledName": "$s11ZunzhxGuzie11kTiaoliangcSSvp",
+        "moduleName": "ZunzhxGuzie",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "isLet": true,
+        "hasStorage": true
+      },
+      {
+        "kind": "Function",
+        "name": "FieyangdgYoafi",
+        "printedName": "FieyangdgYoafi()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11ZunzhxGuzie14FieyangdgYoafiyyF",
+        "mangledName": "$s11ZunzhxGuzie14FieyangdgYoafiyyF",
+        "moduleName": "ZunzhxGuzie",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "LandgJiahcsh",
+        "printedName": "LandgJiahcsh()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11ZunzhxGuzie12LandgJiahcshyyF",
+        "mangledName": "$s11ZunzhxGuzie12LandgJiahcshyyF",
+        "moduleName": "ZunzhxGuzie",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "YnabosliGuxia",
+        "printedName": "YnabosliGuxia(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Guntandgd",
+            "printedName": "ZunzhxGuzie.Guntandgd",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11ZunzhxGuzie13YnabosliGuxiayyAA9GuntandgdVF",
+        "mangledName": "$s11ZunzhxGuzie13YnabosliGuxiayyAA9GuntandgdVF",
+        "moduleName": "ZunzhxGuzie",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "LoazhousyBagey",
+        "printedName": "LoazhousyBagey(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Guntandgd",
+            "printedName": "ZunzhxGuzie.Guntandgd",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11ZunzhxGuzie14LoazhousyBageyyyAA9GuntandgdVF",
+        "mangledName": "$s11ZunzhxGuzie14LoazhousyBageyyyAA9GuntandgdVF",
+        "moduleName": "ZunzhxGuzie",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Zhulusn",
+        "printedName": "Zhulusn",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "zieure",
+            "printedName": "zieure",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie7ZhulusnV6zieureSSSgvp",
+            "mangledName": "$s11ZunzhxGuzie7ZhulusnV6zieureSSSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie7ZhulusnV6zieureSSSgvg",
+                "mangledName": "$s11ZunzhxGuzie7ZhulusnV6zieureSSSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "riiwqa",
+            "printedName": "riiwqa",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie7ZhulusnV6riiwqaSSSgvp",
+            "mangledName": "$s11ZunzhxGuzie7ZhulusnV6riiwqaSSSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie7ZhulusnV6riiwqaSSSgvg",
+                "mangledName": "$s11ZunzhxGuzie7ZhulusnV6riiwqaSSSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ajsuha",
+            "printedName": "ajsuha",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie7ZhulusnV6ajsuhaSSSgvp",
+            "mangledName": "$s11ZunzhxGuzie7ZhulusnV6ajsuhaSSSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie7ZhulusnV6ajsuhaSSSgvg",
+                "mangledName": "$s11ZunzhxGuzie7ZhulusnV6ajsuhaSSSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kaoiueu",
+            "printedName": "kaoiueu",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie7ZhulusnV7kaoiueuSaySSGSgvp",
+            "mangledName": "$s11ZunzhxGuzie7ZhulusnV7kaoiueuSaySSGSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie7ZhulusnV7kaoiueuSaySSGSgvg",
+                "mangledName": "$s11ZunzhxGuzie7ZhulusnV7kaoiueuSaySSGSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "country",
+            "printedName": "country",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZunzhxGuzie.Zhulusn.Huidangtas?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Huidangtas",
+                    "printedName": "ZunzhxGuzie.Zhulusn.Huidangtas",
+                    "usr": "s:11ZunzhxGuzie7ZhulusnV10HuidangtasV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie7ZhulusnV7countryAC10HuidangtasVSgvp",
+            "mangledName": "$s11ZunzhxGuzie7ZhulusnV7countryAC10HuidangtasVSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 4,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ZunzhxGuzie.Zhulusn.Huidangtas?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Huidangtas",
+                        "printedName": "ZunzhxGuzie.Zhulusn.Huidangtas",
+                        "usr": "s:11ZunzhxGuzie7ZhulusnV10HuidangtasV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie7ZhulusnV7countryAC10HuidangtasVSgvg",
+                "mangledName": "$s11ZunzhxGuzie7ZhulusnV7countryAC10HuidangtasVSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Huidangtas",
+            "printedName": "Huidangtas",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "code",
+                "printedName": "code",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11ZunzhxGuzie7ZhulusnV10HuidangtasV4codeSSvp",
+                "mangledName": "$s11ZunzhxGuzie7ZhulusnV10HuidangtasV4codeSSvp",
+                "moduleName": "ZunzhxGuzie",
+                "declAttributes": [
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 0,
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11ZunzhxGuzie7ZhulusnV10HuidangtasV4codeSSvg",
+                    "mangledName": "$s11ZunzhxGuzie7ZhulusnV10HuidangtasV4codeSSvg",
+                    "moduleName": "ZunzhxGuzie",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(code:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Huidangtas",
+                    "printedName": "ZunzhxGuzie.Zhulusn.Huidangtas",
+                    "usr": "s:11ZunzhxGuzie7ZhulusnV10HuidangtasV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11ZunzhxGuzie7ZhulusnV10HuidangtasV4codeAESS_tcfc",
+                "mangledName": "$s11ZunzhxGuzie7ZhulusnV10HuidangtasV4codeAESS_tcfc",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Huidangtas",
+                    "printedName": "ZunzhxGuzie.Zhulusn.Huidangtas",
+                    "usr": "s:11ZunzhxGuzie7ZhulusnV10HuidangtasV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11ZunzhxGuzie7ZhulusnV10HuidangtasV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s11ZunzhxGuzie7ZhulusnV10HuidangtasV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:11ZunzhxGuzie7ZhulusnV10HuidangtasV",
+            "mangledName": "$s11ZunzhxGuzie7ZhulusnV10HuidangtasV",
+            "moduleName": "ZunzhxGuzie",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(zieure:riiwqa:ajsuha:kaoiueu:country:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Zhulusn",
+                "printedName": "ZunzhxGuzie.Zhulusn",
+                "usr": "s:11ZunzhxGuzie7ZhulusnV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZunzhxGuzie.Zhulusn.Huidangtas?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Huidangtas",
+                    "printedName": "ZunzhxGuzie.Zhulusn.Huidangtas",
+                    "usr": "s:11ZunzhxGuzie7ZhulusnV10HuidangtasV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11ZunzhxGuzie7ZhulusnV6zieure6riiwqa6ajsuha7kaoiueu7countryACSSSg_A2ISaySSGSgAC10HuidangtasVSgtcfc",
+            "mangledName": "$s11ZunzhxGuzie7ZhulusnV6zieure6riiwqa6ajsuha7kaoiueu7countryACSSSg_A2ISaySSGSgAC10HuidangtasVSgtcfc",
+            "moduleName": "ZunzhxGuzie",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Zhulusn",
+                "printedName": "ZunzhxGuzie.Zhulusn",
+                "usr": "s:11ZunzhxGuzie7ZhulusnV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11ZunzhxGuzie7ZhulusnV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11ZunzhxGuzie7ZhulusnV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "ZunzhxGuzie",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11ZunzhxGuzie7ZhulusnV",
+        "mangledName": "$s11ZunzhxGuzie7ZhulusnV",
+        "moduleName": "ZunzhxGuzie",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Guntandgd",
+        "printedName": "Guntandgd",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "zxxqqaa",
+            "printedName": "zxxqqaa",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV7zxxqqaaSiSgvp",
+            "mangledName": "$s11ZunzhxGuzie9GuntandgdV7zxxqqaaSiSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie9GuntandgdV7zxxqqaaSiSgvg",
+                "mangledName": "$s11ZunzhxGuzie9GuntandgdV7zxxqqaaSiSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "xcveroz",
+            "printedName": "xcveroz",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV7xcverozSSSgvp",
+            "mangledName": "$s11ZunzhxGuzie9GuntandgdV7xcverozSSSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie9GuntandgdV7xcverozSSSgvg",
+                "mangledName": "$s11ZunzhxGuzie9GuntandgdV7xcverozSSSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fmakee",
+            "printedName": "fmakee",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV6fmakeeSiSgvp",
+            "mangledName": "$s11ZunzhxGuzie9GuntandgdV6fmakeeSiSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie9GuntandgdV6fmakeeSiSgvg",
+                "mangledName": "$s11ZunzhxGuzie9GuntandgdV6fmakeeSiSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "xifne",
+            "printedName": "xifne",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV5xifneSSSgvp",
+            "mangledName": "$s11ZunzhxGuzie9GuntandgdV5xifneSSSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie9GuntandgdV5xifneSSSgvg",
+                "mangledName": "$s11ZunzhxGuzie9GuntandgdV5xifneSSSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "guzue",
+            "printedName": "guzue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV5guzueSSSgvp",
+            "mangledName": "$s11ZunzhxGuzie9GuntandgdV5guzueSSSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 4,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie9GuntandgdV5guzueSSSgvg",
+                "mangledName": "$s11ZunzhxGuzie9GuntandgdV5guzueSSSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "wytan",
+            "printedName": "wytan",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV5wytanSSSgvp",
+            "mangledName": "$s11ZunzhxGuzie9GuntandgdV5wytanSSSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 5,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie9GuntandgdV5wytanSSSgvg",
+                "mangledName": "$s11ZunzhxGuzie9GuntandgdV5wytanSSSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mokeu",
+            "printedName": "mokeu",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV5mokeuSSSgvp",
+            "mangledName": "$s11ZunzhxGuzie9GuntandgdV5mokeuSSSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 6,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie9GuntandgdV5mokeuSSSgvg",
+                "mangledName": "$s11ZunzhxGuzie9GuntandgdV5mokeuSSSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "wusya",
+            "printedName": "wusya",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV5wusyaSSSgvp",
+            "mangledName": "$s11ZunzhxGuzie9GuntandgdV5wusyaSSSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 7,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie9GuntandgdV5wusyaSSSgvg",
+                "mangledName": "$s11ZunzhxGuzie9GuntandgdV5wusyaSSSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dayen",
+            "printedName": "dayen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV5dayenSaySSGSgvp",
+            "mangledName": "$s11ZunzhxGuzie9GuntandgdV5dayenSaySSGSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 8,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie9GuntandgdV5dayenSaySSGSgvg",
+                "mangledName": "$s11ZunzhxGuzie9GuntandgdV5dayenSaySSGSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(zxxqqaa:xcveroz:fmakee:xifne:guzue:wytan:mokeu:wusya:dayen:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Guntandgd",
+                "printedName": "ZunzhxGuzie.Guntandgd",
+                "usr": "s:11ZunzhxGuzie9GuntandgdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV7zxxqqaa7xcveroz6fmakee5xifne5guzue5wytan5mokeu5wusya5dayenACSiSg_SSSgAm5NSaySSGSgtcfc",
+            "mangledName": "$s11ZunzhxGuzie9GuntandgdV7zxxqqaa7xcveroz6fmakee5xifne5guzue5wytan5mokeu5wusya5dayenACSiSg_SSSgAm5NSaySSGSgtcfc",
+            "moduleName": "ZunzhxGuzie",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Guntandgd",
+                "printedName": "ZunzhxGuzie.Guntandgd",
+                "usr": "s:11ZunzhxGuzie9GuntandgdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11ZunzhxGuzie9GuntandgdV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "ZunzhxGuzie",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ZunzhxGuzie9GuntandgdV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11ZunzhxGuzie9GuntandgdV6encode2toys7Encoder_p_tKF",
+            "moduleName": "ZunzhxGuzie",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11ZunzhxGuzie9GuntandgdV",
+        "mangledName": "$s11ZunzhxGuzie9GuntandgdV",
+        "moduleName": "ZunzhxGuzie",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "WenrouanBVhahje",
+        "printedName": "WenrouanBVhahje()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11ZunzhxGuzie15WenrouanBVhahjeSbyF",
+        "mangledName": "$s11ZunzhxGuzie15WenrouanBVhahjeSbyF",
+        "moduleName": "ZunzhxGuzie",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "YanhkianeGagerr",
+        "printedName": "YanhkianeGagerr()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11ZunzhxGuzie15YanhkianeGagerrSbyF",
+        "mangledName": "$s11ZunzhxGuzie15YanhkianeGagerrSbyF",
+        "moduleName": "ZunzhxGuzie",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ZunzhxGuzie"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "ZunzhxGuzie"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FuheChaoyuenaViewController",
+        "printedName": "FuheChaoyuenaViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "fncuns",
+            "printedName": "fncuns",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZunzhxGuzie.Guntandgd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Guntandgd",
+                    "printedName": "ZunzhxGuzie.Guntandgd",
+                    "usr": "s:11ZunzhxGuzie9GuntandgdV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie27FuheChaoyuenaViewControllerC6fncunsAA9GuntandgdVSgvp",
+            "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC6fncunsAA9GuntandgdVSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ZunzhxGuzie.Guntandgd?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Guntandgd",
+                        "printedName": "ZunzhxGuzie.Guntandgd",
+                        "usr": "s:11ZunzhxGuzie9GuntandgdV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie27FuheChaoyuenaViewControllerC6fncunsAA9GuntandgdVSgvg",
+                "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC6fncunsAA9GuntandgdVSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ZunzhxGuzie.Guntandgd?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Guntandgd",
+                        "printedName": "ZunzhxGuzie.Guntandgd",
+                        "usr": "s:11ZunzhxGuzie9GuntandgdV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie27FuheChaoyuenaViewControllerC6fncunsAA9GuntandgdVSgvs",
+                "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC6fncunsAA9GuntandgdVSgvs",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie27FuheChaoyuenaViewControllerC6fncunsAA9GuntandgdVSgvM",
+                "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC6fncunsAA9GuntandgdVSgvM",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "jianxuxnh",
+            "printedName": "jianxuxnh",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WebKit.WKWebView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie27FuheChaoyuenaViewControllerC9jianxuxnhSo05WKWebE0CSgvp",
+            "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC9jianxuxnhSo05WKWebE0CSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WebKit.WKWebView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WKWebView",
+                        "printedName": "WebKit.WKWebView",
+                        "usr": "c:objc(cs)WKWebView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie27FuheChaoyuenaViewControllerC9jianxuxnhSo05WKWebE0CSgvg",
+                "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC9jianxuxnhSo05WKWebE0CSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WebKit.WKWebView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WKWebView",
+                        "printedName": "WebKit.WKWebView",
+                        "usr": "c:objc(cs)WKWebView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie27FuheChaoyuenaViewControllerC9jianxuxnhSo05WKWebE0CSgvs",
+                "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC9jianxuxnhSo05WKWebE0CSgvs",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie27FuheChaoyuenaViewControllerC9jianxuxnhSo05WKWebE0CSgvM",
+                "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC9jianxuxnhSo05WKWebE0CSgvM",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController(im)viewDidLoad",
+            "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC11viewDidLoadyyF",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLayoutSubviews",
+            "printedName": "viewDidLayoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController(im)viewDidLayoutSubviews",
+            "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC21viewDidLayoutSubviewsyyF",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLayoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKNavigationActionPolicy) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationActionPolicy",
+                    "printedName": "WebKit.WKNavigationActionPolicy",
+                    "usr": "c:@E@WKNavigationActionPolicy"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController(im)webView:decidePolicyForNavigationAction:decisionHandler:",
+            "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC03webE0_15decidePolicyFor15decisionHandlerySo05WKWebE0C_So18WKNavigationActionCySo0noI0VctF",
+            "moduleName": "ZunzhxGuzie",
+            "isOpen": true,
+            "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:createWebViewWith:for:windowFeatures:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WebKit.WKWebView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebViewConfiguration",
+                "printedName": "WebKit.WKWebViewConfiguration",
+                "usr": "c:objc(cs)WKWebViewConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWindowFeatures",
+                "printedName": "WebKit.WKWindowFeatures",
+                "usr": "c:objc(cs)WKWindowFeatures"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController(im)webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+            "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC03webE0_09createWebE4With3for14windowFeaturesSo05WKWebE0CSgAI_So0nE13ConfigurationCSo18WKNavigationActionCSo08WKWindowM0CtF",
+            "moduleName": "ZunzhxGuzie",
+            "isOpen": true,
+            "objc_name": "webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webViewDidClose",
+            "printedName": "webViewDidClose(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController(im)webViewDidClose:",
+            "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC03webE8DidCloseyySo05WKWebE0CF",
+            "moduleName": "ZunzhxGuzie",
+            "isOpen": true,
+            "objc_name": "webViewDidClose:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "shouldAutorotate",
+            "printedName": "shouldAutorotate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController(py)shouldAutorotate",
+            "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC16shouldAutorotateSbvp",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "shouldAutorotate",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController(im)shouldAutorotate",
+                "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC16shouldAutorotateSbvg",
+                "moduleName": "ZunzhxGuzie",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "shouldAutorotate",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "supportedInterfaceOrientations",
+            "printedName": "supportedInterfaceOrientations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientationMask",
+                "printedName": "UIKit.UIInterfaceOrientationMask",
+                "usr": "c:@E@UIInterfaceOrientationMask"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController(py)supportedInterfaceOrientations",
+            "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvp",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "supportedInterfaceOrientations",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientationMask",
+                    "printedName": "UIKit.UIInterfaceOrientationMask",
+                    "usr": "c:@E@UIInterfaceOrientationMask"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController(im)supportedInterfaceOrientations",
+                "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvg",
+                "moduleName": "ZunzhxGuzie",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "supportedInterfaceOrientations",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FuheChaoyuenaViewController",
+                "printedName": "ZunzhxGuzie.FuheChaoyuenaViewController",
+                "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZunzhxGuzie.FuheChaoyuenaViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FuheChaoyuenaViewController",
+                    "printedName": "ZunzhxGuzie.FuheChaoyuenaViewController",
+                    "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController(im)initWithCoder:",
+            "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ZunzhxGuzie@objc(cs)FuheChaoyuenaViewController",
+        "mangledName": "$s11ZunzhxGuzie27FuheChaoyuenaViewControllerC",
+        "moduleName": "ZunzhxGuzie",
+        "isOpen": true,
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ZunzhxGuzie"
+      },
+      {
+        "kind": "Import",
+        "name": "Kingfisher",
+        "printedName": "Kingfisher",
+        "declKind": "Import",
+        "moduleName": "ZunzhxGuzie"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SynkroniseringsIllusionViewController",
+        "printedName": "SynkroniseringsIllusionViewController",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)SynkroniseringsIllusionViewController(im)viewDidLoad",
+            "mangledName": "$s11ZunzhxGuzie37SynkroniseringsIllusionViewControllerC11viewDidLoadyyF",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SynkroniseringsIllusionViewController",
+                "printedName": "ZunzhxGuzie.SynkroniseringsIllusionViewController",
+                "usr": "c:@M@ZunzhxGuzie@objc(cs)SynkroniseringsIllusionViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)SynkroniseringsIllusionViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s11ZunzhxGuzie37SynkroniseringsIllusionViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZunzhxGuzie.SynkroniseringsIllusionViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SynkroniseringsIllusionViewController",
+                    "printedName": "ZunzhxGuzie.SynkroniseringsIllusionViewController",
+                    "usr": "c:@M@ZunzhxGuzie@objc(cs)SynkroniseringsIllusionViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)SynkroniseringsIllusionViewController(im)initWithCoder:",
+            "mangledName": "$s11ZunzhxGuzie37SynkroniseringsIllusionViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ZunzhxGuzie@objc(cs)SynkroniseringsIllusionViewController",
+        "mangledName": "$s11ZunzhxGuzie37SynkroniseringsIllusionViewControllerC",
+        "moduleName": "ZunzhxGuzie",
+        "isOpen": true,
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SpilView",
+        "printedName": "SpilView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rytmePoints",
+            "printedName": "rytmePoints",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ZunzhxGuzie.RytmePoint]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RytmePoint",
+                    "printedName": "ZunzhxGuzie.RytmePoint",
+                    "usr": "c:@M@ZunzhxGuzie@objc(cs)RytmePoint"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie8SpilViewC11rytmePoints33_C8F07F842CADBAE73C7AA170FCA97134LLSayAA10RytmePointCGvp",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC11rytmePoints33_C8F07F842CADBAE73C7AA170FCA97134LLSayAA10RytmePointCGvp",
+            "moduleName": "ZunzhxGuzie",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "ægteRytmePoint",
+            "printedName": "ægteRytmePoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZunzhxGuzie.RytmePoint?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RytmePoint",
+                    "printedName": "ZunzhxGuzie.RytmePoint",
+                    "usr": "c:@M@ZunzhxGuzie@objc(cs)RytmePoint"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie8SpilViewC0017gteRytmePoint_Cfb33_C8F07F842CADBAE73C7AA170FCA97134LLAA10RytmePointCSgvp",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC0017gteRytmePoint_Cfb33_C8F07F842CADBAE73C7AA170FCA97134LLAA10RytmePointCSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "animationTimer",
+            "printedName": "animationTimer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Timer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Timer",
+                    "printedName": "Foundation.Timer",
+                    "usr": "c:objc(cs)NSTimer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie8SpilViewC14animationTimer33_C8F07F842CADBAE73C7AA170FCA97134LLSo7NSTimerCSgvp",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC14animationTimer33_C8F07F842CADBAE73C7AA170FCA97134LLSo7NSTimerCSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "vanskelighedsTimer",
+            "printedName": "vanskelighedsTimer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Timer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Timer",
+                    "printedName": "Foundation.Timer",
+                    "usr": "c:objc(cs)NSTimer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie8SpilViewC18vanskelighedsTimer33_C8F07F842CADBAE73C7AA170FCA97134LLSo7NSTimerCSgvp",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC18vanskelighedsTimer33_C8F07F842CADBAE73C7AA170FCA97134LLSo7NSTimerCSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 3,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "adgbahreu",
+            "printedName": "adgbahreu",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIImageView",
+                "printedName": "UIKit.UIImageView",
+                "usr": "c:objc(cs)UIImageView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie8SpilViewC9adgbahreu33_C8F07F842CADBAE73C7AA170FCA97134LLSo07UIImageD0Cvp",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC9adgbahreu33_C8F07F842CADBAE73C7AA170FCA97134LLSo07UIImageD0Cvp",
+            "moduleName": "ZunzhxGuzie",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 4,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie8SpilViewC5score33_C8F07F842CADBAE73C7AA170FCA97134LLSivp",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC5score33_C8F07F842CADBAE73C7AA170FCA97134LLSivp",
+            "moduleName": "ZunzhxGuzie",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 5,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "level",
+            "printedName": "level",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie8SpilViewC5level33_C8F07F842CADBAE73C7AA170FCA97134LLSivp",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC5level33_C8F07F842CADBAE73C7AA170FCA97134LLSivp",
+            "moduleName": "ZunzhxGuzie",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 6,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "animationHastighed",
+            "printedName": "animationHastighed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie8SpilViewC18animationHastighed33_C8F07F842CADBAE73C7AA170FCA97134LLSdvp",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC18animationHastighed33_C8F07F842CADBAE73C7AA170FCA97134LLSdvp",
+            "moduleName": "ZunzhxGuzie",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 7,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "rytmePointValgtHandler",
+            "printedName": "rytmePointValgtHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((ZunzhxGuzie.RytmePoint) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ZunzhxGuzie.RytmePoint) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RytmePoint",
+                        "printedName": "ZunzhxGuzie.RytmePoint",
+                        "usr": "c:@M@ZunzhxGuzie@objc(cs)RytmePoint"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie8SpilViewC22rytmePointValgtHandleryAA05RytmeF0CcSgvp",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC22rytmePointValgtHandleryAA05RytmeF0CcSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 8,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((ZunzhxGuzie.RytmePoint) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(ZunzhxGuzie.RytmePoint) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RytmePoint",
+                            "printedName": "ZunzhxGuzie.RytmePoint",
+                            "usr": "c:@M@ZunzhxGuzie@objc(cs)RytmePoint"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie8SpilViewC22rytmePointValgtHandleryAA05RytmeF0CcSgvg",
+                "mangledName": "$s11ZunzhxGuzie8SpilViewC22rytmePointValgtHandleryAA05RytmeF0CcSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((ZunzhxGuzie.RytmePoint) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(ZunzhxGuzie.RytmePoint) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RytmePoint",
+                            "printedName": "ZunzhxGuzie.RytmePoint",
+                            "usr": "c:@M@ZunzhxGuzie@objc(cs)RytmePoint"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie8SpilViewC22rytmePointValgtHandleryAA05RytmeF0CcSgvs",
+                "mangledName": "$s11ZunzhxGuzie8SpilViewC22rytmePointValgtHandleryAA05RytmeF0CcSgvs",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie8SpilViewC22rytmePointValgtHandleryAA05RytmeF0CcSgvM",
+                "mangledName": "$s11ZunzhxGuzie8SpilViewC22rytmePointValgtHandleryAA05RytmeF0CcSgvM",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "spilSlutHandler",
+            "printedName": "spilSlutHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Int) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie8SpilViewC15spilSlutHandlerySicSgvp",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC15spilSlutHandlerySicSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 9,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Int) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie8SpilViewC15spilSlutHandlerySicSgvg",
+                "mangledName": "$s11ZunzhxGuzie8SpilViewC15spilSlutHandlerySicSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Int) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie8SpilViewC15spilSlutHandlerySicSgvs",
+                "mangledName": "$s11ZunzhxGuzie8SpilViewC15spilSlutHandlerySicSgvs",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie8SpilViewC15spilSlutHandlerySicSgvM",
+                "mangledName": "$s11ZunzhxGuzie8SpilViewC15spilSlutHandlerySicSgvM",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SpilView",
+                "printedName": "ZunzhxGuzie.SpilView",
+                "usr": "c:@M@ZunzhxGuzie@objc(cs)SpilView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)SpilView(im)initWithFrame:",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZunzhxGuzie.SpilView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SpilView",
+                    "printedName": "ZunzhxGuzie.SpilView",
+                    "usr": "c:@M@ZunzhxGuzie@objc(cs)SpilView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)SpilView(im)initWithCoder:",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startSpil",
+            "printedName": "startSpil()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ZunzhxGuzie8SpilViewC05startC0yyF",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC05startC0yyF",
+            "moduleName": "ZunzhxGuzie",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "touchesBegan",
+            "printedName": "touchesBegan(_:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<UIKit.UITouch>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITouch",
+                    "printedName": "UIKit.UITouch",
+                    "usr": "c:objc(cs)UITouch"
+                  }
+                ],
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIEvent?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEvent",
+                    "printedName": "UIKit.UIEvent",
+                    "usr": "c:objc(cs)UIEvent"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)SpilView(im)touchesBegan:withEvent:",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC12touchesBegan_4withyShySo7UITouchCG_So7UIEventCSgtF",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "touchesBegan:withEvent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hentScore",
+            "printedName": "hentScore()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ZunzhxGuzie8SpilViewC9hentScoreSiyF",
+            "mangledName": "$s11ZunzhxGuzie8SpilViewC9hentScoreSiyF",
+            "moduleName": "ZunzhxGuzie",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ZunzhxGuzie@objc(cs)SpilView",
+        "mangledName": "$s11ZunzhxGuzie8SpilViewC",
+        "moduleName": "ZunzhxGuzie",
+        "isOpen": true,
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RytmePoint",
+        "printedName": "RytmePoint",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isÆgte",
+            "printedName": "isÆgte",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie10RytmePointC009isgte_cmaSbvp",
+            "mangledName": "$s11ZunzhxGuzie10RytmePointC009isgte_cmaSbvp",
+            "moduleName": "ZunzhxGuzie",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie10RytmePointC009isgte_cmaSbvg",
+                "mangledName": "$s11ZunzhxGuzie10RytmePointC009isgte_cmaSbvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie10RytmePointC009isgte_cmaSbvs",
+                "mangledName": "$s11ZunzhxGuzie10RytmePointC009isgte_cmaSbvs",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie10RytmePointC009isgte_cmaSbvM",
+                "mangledName": "$s11ZunzhxGuzie10RytmePointC009isgte_cmaSbvM",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pulserendeAnimation",
+            "printedName": "pulserendeAnimation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie10RytmePointC19pulserendeAnimation33_C8F07F842CADBAE73C7AA170FCA97134LLSSvp",
+            "mangledName": "$s11ZunzhxGuzie10RytmePointC19pulserendeAnimation33_C8F07F842CADBAE73C7AA170FCA97134LLSSvp",
+            "moduleName": "ZunzhxGuzie",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RytmePoint",
+                "printedName": "ZunzhxGuzie.RytmePoint",
+                "usr": "c:@M@ZunzhxGuzie@objc(cs)RytmePoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)RytmePoint(im)initWithFrame:",
+            "mangledName": "$s11ZunzhxGuzie10RytmePointC5frameACSo6CGRectV_tcfc",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZunzhxGuzie.RytmePoint?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RytmePoint",
+                    "printedName": "ZunzhxGuzie.RytmePoint",
+                    "usr": "c:@M@ZunzhxGuzie@objc(cs)RytmePoint"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)RytmePoint(im)initWithCoder:",
+            "mangledName": "$s11ZunzhxGuzie10RytmePointC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "visSuccesAnimation",
+            "printedName": "visSuccesAnimation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ZunzhxGuzie10RytmePointC18visSuccesAnimationyyF",
+            "mangledName": "$s11ZunzhxGuzie10RytmePointC18visSuccesAnimationyyF",
+            "moduleName": "ZunzhxGuzie",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "visFejlAnimation",
+            "printedName": "visFejlAnimation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ZunzhxGuzie10RytmePointC16visFejlAnimationyyF",
+            "mangledName": "$s11ZunzhxGuzie10RytmePointC16visFejlAnimationyyF",
+            "moduleName": "ZunzhxGuzie",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ZunzhxGuzie@objc(cs)RytmePoint",
+        "mangledName": "$s11ZunzhxGuzie10RytmePointC",
+        "moduleName": "ZunzhxGuzie",
+        "isOpen": true,
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SpilSlutAlertView",
+        "printedName": "SpilSlutAlertView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie17SpilSlutAlertViewC5score33_C8F07F842CADBAE73C7AA170FCA97134LLSivp",
+            "mangledName": "$s11ZunzhxGuzie17SpilSlutAlertViewC5score33_C8F07F842CADBAE73C7AA170FCA97134LLSivp",
+            "moduleName": "ZunzhxGuzie",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "spilTid",
+            "printedName": "spilTid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie17SpilSlutAlertViewC7spilTid33_C8F07F842CADBAE73C7AA170FCA97134LLSdvp",
+            "mangledName": "$s11ZunzhxGuzie17SpilSlutAlertViewC7spilTid33_C8F07F842CADBAE73C7AA170FCA97134LLSdvp",
+            "moduleName": "ZunzhxGuzie",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "genstartHandler",
+            "printedName": "genstartHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ZunzhxGuzie17SpilSlutAlertViewC15genstartHandleryycSgvp",
+            "mangledName": "$s11ZunzhxGuzie17SpilSlutAlertViewC15genstartHandleryycSgvp",
+            "moduleName": "ZunzhxGuzie",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie17SpilSlutAlertViewC15genstartHandleryycSgvg",
+                "mangledName": "$s11ZunzhxGuzie17SpilSlutAlertViewC15genstartHandleryycSgvg",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie17SpilSlutAlertViewC15genstartHandleryycSgvs",
+                "mangledName": "$s11ZunzhxGuzie17SpilSlutAlertViewC15genstartHandleryycSgvs",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ZunzhxGuzie17SpilSlutAlertViewC15genstartHandleryycSgvM",
+                "mangledName": "$s11ZunzhxGuzie17SpilSlutAlertViewC15genstartHandleryycSgvM",
+                "moduleName": "ZunzhxGuzie",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(score:spilTid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SpilSlutAlertView",
+                "printedName": "ZunzhxGuzie.SpilSlutAlertView",
+                "usr": "c:@M@ZunzhxGuzie@objc(cs)SpilSlutAlertView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11ZunzhxGuzie17SpilSlutAlertViewC5score7spilTidACSi_Sdtcfc",
+            "mangledName": "$s11ZunzhxGuzie17SpilSlutAlertViewC5score7spilTidACSi_Sdtcfc",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZunzhxGuzie.SpilSlutAlertView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SpilSlutAlertView",
+                    "printedName": "ZunzhxGuzie.SpilSlutAlertView",
+                    "usr": "c:@M@ZunzhxGuzie@objc(cs)SpilSlutAlertView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)SpilSlutAlertView(im)initWithCoder:",
+            "mangledName": "$s11ZunzhxGuzie17SpilSlutAlertViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SpilSlutAlertView",
+                "printedName": "ZunzhxGuzie.SpilSlutAlertView",
+                "usr": "c:@M@ZunzhxGuzie@objc(cs)SpilSlutAlertView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZunzhxGuzie@objc(cs)SpilSlutAlertView(im)initWithFrame:",
+            "mangledName": "$s11ZunzhxGuzie17SpilSlutAlertViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "ZunzhxGuzie",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ZunzhxGuzie@objc(cs)SpilSlutAlertView",
+        "mangledName": "$s11ZunzhxGuzie17SpilSlutAlertViewC",
+        "moduleName": "ZunzhxGuzie",
+        "isOpen": true,
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIColor",
+        "printedName": "UIColor",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(hex:alpha:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So7UIColorC11ZunzhxGuzieE3hex5alphaABSi_14CoreFoundation7CGFloatVtcfc",
+            "mangledName": "$sSo7UIColorC11ZunzhxGuzieE3hex5alphaABSi_12CoreGraphics7CGFloatVtcfc",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "Convenience"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(hexString:alpha:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So7UIColorC11ZunzhxGuzieE9hexString5alphaABSgSS_14CoreFoundation7CGFloatVtcfc",
+            "mangledName": "$sSo7UIColorC11ZunzhxGuzieE9hexString5alphaABSgSS_12CoreGraphics7CGFloatVtcfc",
+            "moduleName": "ZunzhxGuzie",
+            "declAttributes": [
+              "Convenience"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIColor",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIColor",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByColorLiteral",
+            "printedName": "_ExpressibleByColorLiteral",
+            "usr": "s:s26_ExpressibleByColorLiteralP",
+            "mangledName": "$ss26_ExpressibleByColorLiteralP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/GuichaouMahe.swift",
+      "kind": "StringLiteral",
+      "offset": 528,
+      "length": 46,
+      "value": "\"jZGRlZbfysqElYzLiJzIjJXLjIrKk9fKjJXLj5aKiw==\""
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/GuichaouMahe.swift",
+      "kind": "StringLiteral",
+      "offset": 677,
+      "length": 78,
+      "value": "\"jZGRlZbfysrT3NXW1dHV3IHVg9TVhNbR1YfX19aH3YHLiIqGjoSVjMuMisqDiomJgMqXkImAlg==\""
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/GuichaouMahe.swift",
+      "kind": "StringLiteral",
+      "offset": 845,
+      "length": 82,
+      "value": "\"jZGRlZbfysqXhJLLgoyRjZCHkJaAl4aKi5GAi5HLhoqIyo+BkI+EypeQiZbKiISMi8qAhJaRy5WLgg==\""
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/GuichaouMahe.swift",
+      "kind": "FloatLiteral",
+      "offset": 4329,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/GuichaouMahe.swift",
+      "kind": "FloatLiteral",
+      "offset": 4624,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/FuheChaoyuenaViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2698,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 327,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "Array",
+      "offset": 5898,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6094,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6120,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 6173,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 12056,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 12121,
+      "length": 3,
+      "value": "1.8"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 12127,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12196,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12206,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 12346,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12439,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12449,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 12564,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12876,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12880,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12886,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14640,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hades\/Desktop\/Code\/10\/1028-1\/ZunzhxGuzie\/ZunzhxGuzie\/SynkroniseringsIllusionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 14754,
+      "length": 21,
+      "value": "\"pulserendeAnimation\""
+    }
+  ]
+}
