@@ -1,9 +1,4 @@
-//
-//  PabrikKartu.swift
-//  FollowRules
-//
-//  Card Factory - Refactored with Generator Pattern & Adapter Pattern
-//
+
 
 import Foundation
 

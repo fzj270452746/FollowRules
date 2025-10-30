@@ -1,9 +1,3 @@
-//
-//  PabrikAturan.swift
-//  FollowRules
-//
-//  Rule Factory - Refactored with Chain of Responsibility & Builder Pattern
-//
 
 import Foundation
 

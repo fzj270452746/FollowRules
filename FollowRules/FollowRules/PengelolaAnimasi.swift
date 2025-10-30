@@ -1,9 +1,4 @@
-//
-//  PengelolaAnimasi.swift
-//  FollowRules
-//
-//  Animation Coordinator & Effects Manager
-//
+
 
 import UIKit
 import QuartzCore
