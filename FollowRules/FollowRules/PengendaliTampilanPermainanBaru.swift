@@ -16,60 +16,52 @@ class PengendaliTampilanPermainanBaru: UIViewController {
     private var cancellables = Set<AnyCancellable>()
     
     // MARK: - UI Components
-    private lazy var kontainerHeader: UIView = {
-        let view = UIView()
-        view.backgroundColor = UIColor(red: 0.8, green: 0.2, blue: 0.2, alpha: 1.0)
+    private lazy var kontainerHeader: KontainerTinta = {
+        let view = KontainerTinta()
+        view.backgroundColor = TemaWarnaTinta.warnaTintaHitam
+        view.layer.cornerRadius = 0
         return view
     }()
     
-    private lazy var tombolKembali: UIButton = {
-        let tombol = UIButton(type: .system)
+    private lazy var tombolKembali: TombolTinta = {
+        let tombol = TombolTinta()
         tombol.setTitle("← Back", for: .normal)
-        tombol.setTitleColor(.white, for: .normal)
+        tombol.setGayaTintaDasar(warnaLatar: .clear, warnaTeks: TemaWarnaTinta.warnaLatarUtama)
         tombol.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         tombol.addTarget(self, action: #selector(tombolKembaliDiketuk), for: .touchUpInside)
         return tombol
     }()
     
-    private lazy var labelTingkat: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 22, weight: .bold)
-        label.textColor = .white
+    private lazy var labelTingkat: LabelTinta = {
+        let label = LabelTinta()
+        label.setGayaTinta(ukuran: 24, berat: .bold, warna: TemaWarnaTinta.warnaLatarUtama)
         label.textAlignment = .center
         return label
     }()
     
-    private lazy var labelSkor: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
-        label.textColor = .white
+    private lazy var labelSkor: LabelTinta = {
+        let label = LabelTinta()
+        label.setGayaTinta(ukuran: 18, berat: .semibold, warna: TemaWarnaTinta.warnaLatarUtama)
         label.textAlignment = .right
         return label
     }()
     
-    private lazy var labelWaktu: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
-        label.textColor = .white
+    private lazy var labelWaktu: LabelTinta = {
+        let label = LabelTinta()
+        label.setGayaTinta(ukuran: 18, berat: .semibold, warna: TemaWarnaTinta.warnaLatarUtama)
         label.textAlignment = .right
         return label
     }()
     
-    private lazy var kontainerAturan: UIView = {
-        let view = UIView()
-        view.backgroundColor = .white
-        view.layer.cornerRadius = 18
-        view.layer.shadowColor = UIColor.black.cgColor
-        view.layer.shadowOffset = CGSize(width: 0, height: 5)
-        view.layer.shadowOpacity = 0.15
-        view.layer.shadowRadius = 10
+    private lazy var kontainerAturan: KontainerTinta = {
+        let view = KontainerTinta()
+        view.backgroundColor = TemaWarnaTinta.warnaLatarUtama
         return view
     }()
     
-    private lazy var labelAturan: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 19, weight: .semibold)
-        label.textColor = UIColor(red: 0.8, green: 0.2, blue: 0.2, alpha: 1.0)
+    private lazy var labelAturan: LabelTinta = {
+        let label = LabelTinta()
+        label.setGayaTinta(ukuran: 19, berat: .semibold, warna: TemaWarnaTinta.warnaTintaHitam)
         label.textAlignment = .center
         label.numberOfLines = 0
         return label
@@ -84,17 +76,11 @@ class PengendaliTampilanPermainanBaru: UIViewController {
     
     private var tampilanKartuArray: [TampilanKartuBaru] = []
     
-    private lazy var tombolVerifikasi: UIButton = {
-        let tombol = UIButton(type: .system)
+    private lazy var tombolVerifikasi: TombolTinta = {
+        let tombol = TombolTinta()
         tombol.setTitle("✓ Check Answer", for: .normal)
+        tombol.setGayaTintaDasar(warnaLatar: TemaWarnaTinta.warnaSukses, warnaTeks: TemaWarnaTinta.warnaLatarUtama)
         tombol.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        tombol.setTitleColor(.white, for: .normal)
-        tombol.backgroundColor = UIColor(red: 0.2, green: 0.8, blue: 0.3, alpha: 1.0)
-        tombol.layer.cornerRadius = 18
-        tombol.layer.shadowColor = UIColor.black.cgColor
-        tombol.layer.shadowOffset = CGSize(width: 0, height: 6)
-        tombol.layer.shadowOpacity = 0.25
-        tombol.layer.shadowRadius = 12
         tombol.addTarget(self, action: #selector(tombolVerifikasiDiketuk), for: .touchUpInside)
         return tombol
     }()
@@ -187,7 +173,27 @@ class PengendaliTampilanPermainanBaru: UIViewController {
     }
     
     private func aturGaya() {
-        view.backgroundColor = UIColor(red: 0.96, green: 0.96, blue: 0.94, alpha: 1.0)
+        view.backgroundColor = TemaWarnaTinta.warnaLatarUtama
+        
+        // Tambahkan latar tingkat tinggi yang sangat visual
+        view.tambahkanLatarTingkatTinggi()
+        
+        // Tambahkan efek tekstur kertas (di atas latar)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
+            guard let self = self else { return }
+            PenciptaEfekTinta.buatEfekTeksturKertas(untukView: self.view)
+        }
+        
+        // Aktifkan efek glow pada header
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+            guard let self = self else { return }
+            PembuatEfekVisualTingkatTinggi.buatEfekGlow(untukView: self.kontainerHeader, warna: TemaWarnaTinta.warnaTintaHitam, radius: 15)
+        }
+        
+        // Aktifkan efek breathing pada tombol verifikasi
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+            self?.tombolVerifikasi.aktifkanEfekPulse()
+        }
     }
     
     private func aturBindings() {
@@ -218,9 +224,9 @@ class PengendaliTampilanPermainanBaru: UIViewController {
                 self?.labelWaktu.text = String(format: "⏱ %02d:%02d", menit, detik)
                 
                 if waktu <= 10 {
-                    self?.labelWaktu.textColor = UIColor(red: 1.0, green: 0.3, blue: 0.3, alpha: 1.0)
+                    self?.labelWaktu.textColor = TemaWarnaTinta.warnaError
                 } else {
-                    self?.labelWaktu.textColor = .white
+                    self?.labelWaktu.textColor = TemaWarnaTinta.warnaLatarUtama
                 }
             }
             .store(in: &cancellables)
@@ -278,6 +284,14 @@ class PengendaliTampilanPermainanBaru: UIViewController {
             tampilanKartu.konfigurasi(kartu: kartu)
             tampilanKartu.penangananKetuk = { [weak self] in
                 self?.viewModel.tanganiKetukanKartu(pada: indeks)
+                
+                // 添加视觉反馈
+                let center = tampilanKartu.superview?.convert(tampilanKartu.center, to: self?.view) ?? CGPoint.zero
+                PembuatEfekVisualTingkatTinggi.buatEfekParticleBurst(
+                    dariPosisi: center,
+                    diView: self?.view ?? tampilanKartu,
+                    warna: self?.viewModel.kartuTerpilih.contains(kartu.id) == true ? TemaWarnaTinta.warnaTintaSedang : TemaWarnaTinta.warnaTintaHitam
+                )
             }
             
             kontainerKisi.addSubview(tampilanKartu)
@@ -292,19 +306,37 @@ class PengendaliTampilanPermainanBaru: UIViewController {
                 make.width.height.equalTo(ukuranKartu)
             }
             
-            // Animasi masuk
+            // Animasi masuk - 增强版
             tampilanKartu.alpha = 0
-            tampilanKartu.transform = CGAffineTransform(scaleX: 0.4, y: 0.4)
+            tampilanKartu.transform = CGAffineTransform(scaleX: 0.3, y: 0.3).rotated(by: CGFloat.random(in: -0.3...0.3))
+            
+            // 添加3D效果
+            var transform3D = CATransform3DIdentity
+            transform3D.m34 = -1.0 / 500.0
+            transform3D = CATransform3DRotate(transform3D, .pi / 4, 1, 0, 0)
+            tampilanKartu.layer.transform = transform3D
+            
+            // 启用交互效果
+            tampilanKartu.aktifkanEfekInteraktif()
             
             UIView.animate(
-                withDuration: 0.5,
-                delay: Double(indeks) * 0.04,
-                usingSpringWithDamping: 0.65,
-                initialSpringVelocity: 0.6,
+                withDuration: 0.6,
+                delay: Double(indeks) * 0.05,
+                usingSpringWithDamping: 0.6,
+                initialSpringVelocity: 0.8,
                 options: .curveEaseOut
             ) {
                 tampilanKartu.alpha = 1
                 tampilanKartu.transform = .identity
+                tampilanKartu.layer.transform = CATransform3DIdentity
+                
+                // 添加粒子效果
+                let cardCenter = tampilanKartu.superview?.convert(tampilanKartu.center, to: self.view) ?? CGPoint.zero
+                PembuatEfekVisualTingkatTinggi.buatEfekParticleBurst(
+                    dariPosisi: cardCenter,
+                    diView: self.view,
+                    warna: TemaWarnaTinta.warnaTintaTerang
+                )
             }
         }
         
@@ -352,6 +384,13 @@ class PengendaliTampilanPermainanBaru: UIViewController {
     }
     
     @objc private func tombolVerifikasiDiketuk() {
+        // 添加触觉反馈
+        PembuatEfekVisualTingkatTinggi.berikanHapticFeedback(style: .medium)
+        
+        // 添加涟漪效果
+        let center = tombolVerifikasi.center
+        PembuatEfekVisualTingkatTinggi.buatEfekRipple(dariPosisi: center, diView: view)
+        
         viewModel.verifikasiJawaban { [weak self] berhasil, pesan in
             guard let self = self else { return }
             
@@ -364,15 +403,22 @@ class PengendaliTampilanPermainanBaru: UIViewController {
     }
     
     private func tampilkanDialogJawabanBenar() {
-        // Animasi kartu benar
+        // 增强动画：粒子效果 + 光晕
         for tampilan in tampilanKartuArray {
             if tampilan.adalahTerpilih {
                 tampilan.animasiBenar()
+                
+                // 添加涟漪效果
+                let center = tampilan.superview?.convert(tampilan.center, to: view) ?? CGPoint.zero
+                PembuatEfekVisualTingkatTinggi.buatEfekRipple(dariPosisi: center, diView: view, warna: TemaWarnaTinta.warnaSukses)
             }
         }
         
+        // 添加触觉反馈
+        PembuatEfekVisualTingkatTinggi.berikanHapticFeedback(style: .heavy)
+        
         // Delay dialog
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
             guard let self = self else { return }
             
             let dialog = DialogKustomSederhana(
@@ -389,14 +435,17 @@ class PengendaliTampilanPermainanBaru: UIViewController {
     }
     
     private func tampilkanDialogJawabanSalah(pesan: String?) {
-        // Animasi kartu salah - hanya untuk kartu yang terpilih
+        // 增强动画：震动 + 粒子效果
         for tampilan in tampilanKartuArray {
             if tampilan.adalahTerpilih {
                 tampilan.animasiSalah()
             }
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) { [weak self] in
+        // 添加触觉反馈
+        PembuatEfekVisualTingkatTinggi.berikanHapticFeedback(style: .heavy)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) { [weak self] in
             guard let self = self else { return }
             
             let dialog = DialogKustomSederhana(
@@ -414,6 +463,18 @@ class PengendaliTampilanPermainanBaru: UIViewController {
     
     private func tampilkanDialogWaktuHabis() {
         let skor = viewModel.skorSekarang
+        
+        // 添加粒子爆发效果
+        let center = view.center
+        PembuatEfekVisualTingkatTinggi.buatEfekParticleBurst(
+            dariPosisi: center,
+            diView: view,
+            warna: TemaWarnaTinta.warnaPeringatan
+        )
+        
+        // 添加触觉反馈
+        PembuatEfekVisualTingkatTinggi.berikanHapticFeedback(style: .heavy)
+        
         let dialog = DialogKustomSederhana(
             judul: "⏱ Time's Up!",
             pesan: "Final Score: \(skor) points",
@@ -459,63 +520,84 @@ class TampilanKartuBaru: UIView {
     }
     
     func animasiBenar() {
+        // 增强版动画：缩放 + 旋转 + 光晕
         let animasiSkala = CAKeyframeAnimation(keyPath: "transform.scale")
-        animasiSkala.values = [1.0, 1.3, 1.0]
-        animasiSkala.keyTimes = [0, 0.5, 1.0]
-        animasiSkala.duration = 0.5
+        animasiSkala.values = [1.0, 1.4, 1.2, 1.0]
+        animasiSkala.keyTimes = [0, 0.3, 0.7, 1.0]
+        animasiSkala.duration = 0.7
         
-        layer.add(animasiSkala, forKey: "correct")
+        let animasiRotasi = CAKeyframeAnimation(keyPath: "transform.rotation")
+        animasiRotasi.values = [0, 0.1, -0.1, 0]
+        animasiRotasi.keyTimes = [0, 0.3, 0.7, 1.0]
+        animasiRotasi.duration = 0.7
+        
+        layer.add(animasiSkala, forKey: "correctScale")
+        layer.add(animasiRotasi, forKey: "correctRotate")
+        
+        // 添加光晕效果
+        PembuatEfekVisualTingkatTinggi.buatEfekGlow(untukView: self, warna: TemaWarnaTinta.warnaSukses, radius: 30)
+        
+        // 添加粒子爆发
+        let center = superview?.convert(self.center, to: nil) ?? CGPoint.zero
+        PembuatEfekVisualTingkatTinggi.buatEfekParticleBurst(dariPosisi: center, diView: self.superview ?? self, warna: TemaWarnaTinta.warnaSukses)
         
         let warnaAsli = kontainerUtama.backgroundColor
         UIView.animate(withDuration: 0.25, animations: {
-            self.kontainerUtama.backgroundColor = UIColor(red: 0.2, green: 0.95, blue: 0.3, alpha: 0.5)
+            self.kontainerUtama.backgroundColor = TemaWarnaTinta.warnaSukses.withAlphaComponent(0.5)
         }) { _ in
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.4) {
                 self.kontainerUtama.backgroundColor = warnaAsli
             }
         }
     }
     
     func animasiSalah() {
+        // 增强版动画：震动 + 光晕
         let animasiGoyang = CAKeyframeAnimation(keyPath: "transform.translation.x")
-        animasiGoyang.values = [0, -12, 12, -12, 12, -8, 8, -4, 4, 0]
+        animasiGoyang.values = [0, -15, 15, -15, 15, -10, 10, -5, 5, 0]
         animasiGoyang.keyTimes = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1.0]
-        animasiGoyang.duration = 0.6
+        animasiGoyang.duration = 0.7
         
-        layer.add(animasiGoyang, forKey: "wrong")
+        let animasiRotasi = CAKeyframeAnimation(keyPath: "transform.rotation")
+        animasiRotasi.values = [0, -0.1, 0.1, -0.05, 0]
+        animasiRotasi.keyTimes = [0, 0.2, 0.4, 0.6, 1.0]
+        animasiRotasi.duration = 0.7
+        
+        layer.add(animasiGoyang, forKey: "wrongShake")
+        layer.add(animasiRotasi, forKey: "wrongRotate")
+        
+        // 添加红色光晕
+        PembuatEfekVisualTingkatTinggi.buatEfekGlow(untukView: self, warna: TemaWarnaTinta.warnaError, radius: 25)
         
         let warnaAsli = kontainerUtama.backgroundColor
         UIView.animate(withDuration: 0.2, animations: {
-            self.kontainerUtama.backgroundColor = UIColor(red: 0.95, green: 0.2, blue: 0.2, alpha: 0.5)
+            self.kontainerUtama.backgroundColor = TemaWarnaTinta.warnaError.withAlphaComponent(0.5)
         }) { _ in
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.4) {
                 self.kontainerUtama.backgroundColor = warnaAsli
             }
         }
     }
     
     private func aturTampilan() {
-        // Kontainer
+        // Kontainer - 水墨风格
         addSubview(kontainerUtama)
-        kontainerUtama.backgroundColor = .white
-        kontainerUtama.layer.cornerRadius = 10
-        kontainerUtama.layer.borderWidth = 2.5
-        kontainerUtama.layer.borderColor = UIColor(red: 0.92, green: 0.92, blue: 0.88, alpha: 1.0).cgColor
-        kontainerUtama.layer.shadowColor = UIColor.black.cgColor
-        kontainerUtama.layer.shadowOffset = CGSize(width: 0, height: 3)
-        kontainerUtama.layer.shadowOpacity = 0.18
-        kontainerUtama.layer.shadowRadius = 6
+        kontainerUtama.backgroundColor = TemaWarnaTinta.warnaLatarUtama
+        kontainerUtama.layer.cornerRadius = 12
+        kontainerUtama.layer.borderWidth = 2
+        kontainerUtama.layer.borderColor = TemaWarnaTinta.warnaTintaTerang.cgColor
+        PenciptaEfekTinta.terapkanShadowTinta(keView: kontainerUtama, intensitas: 0.12)
         
         // Gambar
         gambarView.contentMode = .scaleAspectFit
         gambarView.clipsToBounds = true
         kontainerUtama.addSubview(gambarView)
         
-        // Overlay pilihan
-        overlayPilihan.backgroundColor = UIColor(red: 1.0, green: 0.2, blue: 0.2, alpha: 0.45)
-        overlayPilihan.layer.cornerRadius = 10
-        overlayPilihan.layer.borderWidth = 5
-        overlayPilihan.layer.borderColor = UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0).cgColor
+        // Overlay pilihan - 水墨风格选中效果
+        overlayPilihan.backgroundColor = TemaWarnaTinta.warnaTintaHitam.withAlphaComponent(0.25)
+        overlayPilihan.layer.cornerRadius = 12
+        overlayPilihan.layer.borderWidth = 4
+        overlayPilihan.layer.borderColor = TemaWarnaTinta.warnaTintaHitam.cgColor
         overlayPilihan.alpha = 0
         overlayPilihan.isUserInteractionEnabled = false
         kontainerUtama.addSubview(overlayPilihan)
@@ -542,19 +624,25 @@ class TampilanKartuBaru: UIView {
     @objc private func tampilanDiketuk() {
         penangananKetuk?()
         
+        // 增强动画：缩放 + 旋转 + 涟漪
         UIView.animate(withDuration: 0.1, animations: {
-            self.transform = CGAffineTransform(scaleX: 0.88, y: 0.88)
+            self.transform = CGAffineTransform(scaleX: 0.88, y: 0.88).rotated(by: CGFloat.random(in: -0.08...0.08))
         }) { _ in
             UIView.animate(
-                withDuration: 0.15,
+                withDuration: 0.2,
                 delay: 0,
                 usingSpringWithDamping: 0.4,
-                initialSpringVelocity: 0.8,
+                initialSpringVelocity: 1.0,
                 options: .curveEaseOut
             ) {
                 self.transform = .identity
             }
         }
+        
+        // 添加涟漪效果
+        let center = CGPoint(x: bounds.midX, y: bounds.midY)
+        let centerInSuperview = convert(center, to: superview)
+        PembuatEfekVisualTingkatTinggi.buatEfekRipple(dariPosisi: centerInSuperview, diView: superview ?? self)
     }
 }
 

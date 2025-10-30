@@ -19,21 +19,21 @@ extension AppDelegate {
     }
     
     private func konfigurasiTampilanGlobal() {
-        // Navigation Bar
+        // Navigation Bar - 水墨风格
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.configureWithOpaqueBackground()
-        navBarAppearance.backgroundColor = UIColor(red: 0.8, green: 0.2, blue: 0.2, alpha: 1.0)
+        navBarAppearance.backgroundColor = TemaWarnaTinta.warnaTintaHitam
         navBarAppearance.titleTextAttributes = [
-            .foregroundColor: UIColor.white,
+            .foregroundColor: TemaWarnaTinta.warnaLatarUtama,
             .font: UIFont.systemFont(ofSize: 20, weight: .bold)
         ]
         
         UINavigationBar.appearance().standardAppearance = navBarAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
-        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().tintColor = TemaWarnaTinta.warnaLatarUtama
         
         // Tab Bar (jika diperlukan di masa depan)
-        UITabBar.appearance().tintColor = UIColor(red: 0.8, green: 0.2, blue: 0.2, alpha: 1.0)
+        UITabBar.appearance().tintColor = TemaWarnaTinta.warnaTintaHitam
     }
 }
 

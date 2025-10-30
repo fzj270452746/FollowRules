@@ -13,8 +13,8 @@ class PengendaliSelectorKesulitan: UIViewController {
     
     var penyelesaianPilihan: ((TingkatKesulitan) -> Void)?
     
-    private let kontainerDialog = UIView()
-    private let labelJudul = UILabel()
+    private let kontainerDialog = KontainerTinta()
+    private let labelJudul = LabelTinta()
     private let stackTombol = UIStackView()
     private let tombolTutup = UIButton(type: .system)
     
@@ -24,21 +24,23 @@ class PengendaliSelectorKesulitan: UIViewController {
     }
     
     private func aturTampilan() {
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.65)
+        view.backgroundColor = TemaWarnaTinta.warnaOverlayGelap
         
-        // Dialog kontainer
+        // Dialog kontainer - 水墨风格
         view.addSubview(kontainerDialog)
-        kontainerDialog.backgroundColor = .white
-        kontainerDialog.layer.cornerRadius = 28
-        kontainerDialog.layer.shadowColor = UIColor.black.cgColor
-        kontainerDialog.layer.shadowOffset = CGSize(width: 0, height: 10)
-        kontainerDialog.layer.shadowOpacity = 0.3
-        kontainerDialog.layer.shadowRadius = 20
+        kontainerDialog.backgroundColor = TemaWarnaTinta.warnaLatarUtama
+        kontainerDialog.layer.cornerRadius = 24
+        PenciptaEfekTinta.terapkanShadowTinta(keView: kontainerDialog, intensitas: 0.25)
+        
+        // Tambahkan efek tekstur
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
+            guard let self = self else { return }
+            PenciptaEfekTinta.buatEfekTeksturKertas(untukView: self.kontainerDialog)
+        }
         
         // Judul
         labelJudul.text = "Select Difficulty"
-        labelJudul.font = UIFont.systemFont(ofSize: 28, weight: .bold)
-        labelJudul.textColor = UIColor(red: 0.8, green: 0.2, blue: 0.2, alpha: 1.0)
+        labelJudul.setGayaTinta(ukuran: 28, berat: .bold, warna: TemaWarnaTinta.warnaTintaHitam)
         labelJudul.textAlignment = .center
         kontainerDialog.addSubview(labelJudul)
         
@@ -48,13 +50,13 @@ class PengendaliSelectorKesulitan: UIViewController {
         stackTombol.distribution = .fillEqually
         
         let pilihan: [(judul: String, kesulitan: TingkatKesulitan, warna: UIColor)] = [
-            ("🟢 Easy (3×3)", .mudah, UIColor(red: 0.2, green: 0.8, blue: 0.3, alpha: 1.0)),
-            ("🟡 Medium (4×4)", .sedang, UIColor(red: 0.95, green: 0.65, blue: 0.2, alpha: 1.0)),
-            ("🔴 Hard (5×5)", .sulit, UIColor(red: 0.9, green: 0.2, blue: 0.2, alpha: 1.0)),
-            ("⚫️ Expert (6×6)", .pakar, UIColor(red: 0.5, green: 0.2, blue: 0.7, alpha: 1.0))
+            ("🟢 Easy (3×3)", .mudah, TemaWarnaTinta.warnaSukses),
+            ("🟡 Medium (4×4)", .sedang, TemaWarnaTinta.warnaPeringatan),
+            ("🔴 Hard (5×5)", .sulit, TemaWarnaTinta.warnaError),
+            ("⚫️ Expert (6×6)", .pakar, TemaWarnaTinta.warnaTintaHitam)
         ]
         
-        for (index, (judul, kesulitan, warna)) in pilihan.enumerated() {
+        for (index, (judul, _, warna)) in pilihan.enumerated() {
             let tombol = buatTombolKesulitan(judul: judul, warna: warna)
             tombol.tag = index
             tombol.addTarget(self, action: #selector(kesulitanDipilih(_:)), for: .touchUpInside)
@@ -65,7 +67,7 @@ class PengendaliSelectorKesulitan: UIViewController {
         
         // Tombol tutup
         tombolTutup.setTitle("✕", for: .normal)
-        tombolTutup.setTitleColor(.gray, for: .normal)
+        tombolTutup.setTitleColor(TemaWarnaTinta.warnaTintaSedang, for: .normal)
         tombolTutup.titleLabel?.font = UIFont.systemFont(ofSize: 26, weight: .light)
         tombolTutup.addTarget(self, action: #selector(tutup), for: .touchUpInside)
         kontainerDialog.addSubview(tombolTutup)
@@ -110,21 +112,15 @@ class PengendaliSelectorKesulitan: UIViewController {
         }
     }
     
-    private func buatTombolKesulitan(judul: String, warna: UIColor) -> UIButton {
-        let tombol = UIButton(type: .system)
+    private func buatTombolKesulitan(judul: String, warna: UIColor) -> TombolTinta {
+        let tombol = TombolTinta()
         tombol.setTitle(judul, for: .normal)
+        tombol.setGayaTintaDasar(warnaLatar: warna, warnaTeks: TemaWarnaTinta.warnaLatarUtama)
         tombol.titleLabel?.font = UIFont.systemFont(ofSize: 19, weight: .semibold)
-        tombol.setTitleColor(.white, for: .normal)
-        tombol.backgroundColor = warna
-        tombol.layer.cornerRadius = 16
-        tombol.layer.shadowColor = UIColor.black.cgColor
-        tombol.layer.shadowOffset = CGSize(width: 0, height: 4)
-        tombol.layer.shadowOpacity = 0.2
-        tombol.layer.shadowRadius = 8
         return tombol
     }
     
-    @objc private func kesulitanDipilih(_ pengirim: UIButton) {
+    @objc private func kesulitanDipilih(_ pengirim: TombolTinta) {
         let kesulitanArray: [TingkatKesulitan] = [.mudah, .sedang, .sulit, .pakar]
         let kesulitan = kesulitanArray[pengirim.tag]
         
@@ -189,24 +185,24 @@ class DialogKustomSederhana: UIView {
         
         var warna: UIColor {
             switch self {
-            case .utama: return UIColor(red: 0.8, green: 0.2, blue: 0.2, alpha: 1.0)
-            case .sekunder: return UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
-            case .sukses: return UIColor(red: 0.2, green: 0.8, blue: 0.3, alpha: 1.0)
-            case .bahaya: return UIColor(red: 0.95, green: 0.3, blue: 0.2, alpha: 1.0)
+            case .utama: return TemaWarnaTinta.warnaTintaHitam
+            case .sekunder: return TemaWarnaTinta.warnaTintaTerang
+            case .sukses: return TemaWarnaTinta.warnaSukses
+            case .bahaya: return TemaWarnaTinta.warnaError
             }
         }
         
         var warnaTeks: UIColor {
             switch self {
-            case .sekunder: return .darkGray
-            default: return .white
+            case .sekunder: return TemaWarnaTinta.warnaTintaHitam
+            default: return TemaWarnaTinta.warnaLatarUtama
             }
         }
     }
     
-    private let kontainerDialog = UIView()
-    private let labelJudul = UILabel()
-    private let labelPesan = UILabel()
+    private let kontainerDialog = KontainerTinta()
+    private let labelJudul = LabelTinta()
+    private let labelPesan = LabelTinta()
     private let stackTombol = UIStackView()
     
     private var tindakanArray: [() -> Void] = []
@@ -226,29 +222,28 @@ class DialogKustomSederhana: UIView {
     }
     
     private func aturTampilan(judul: String, pesan: String, tombolArray: [(judul: String, gaya: GayaTombol, tindakan: () -> Void)]) {
-        backgroundColor = UIColor.black.withAlphaComponent(0.65)
+        backgroundColor = TemaWarnaTinta.warnaOverlayGelap
         
-        // Dialog kontainer
+        // Dialog kontainer - 水墨风格
         addSubview(kontainerDialog)
-        kontainerDialog.backgroundColor = .white
-        kontainerDialog.layer.cornerRadius = 26
-        kontainerDialog.layer.shadowColor = UIColor.black.cgColor
-        kontainerDialog.layer.shadowOffset = CGSize(width: 0, height: 10)
-        kontainerDialog.layer.shadowOpacity = 0.3
-        kontainerDialog.layer.shadowRadius = 20
+        kontainerDialog.backgroundColor = TemaWarnaTinta.warnaLatarUtama
+        
+        // Tambahkan efek tekstur
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
+            guard let self = self else { return }
+            PenciptaEfekTinta.buatEfekTeksturKertas(untukView: self.kontainerDialog)
+        }
         
         // Judul
         labelJudul.text = judul
-        labelJudul.font = UIFont.systemFont(ofSize: 26, weight: .bold)
-        labelJudul.textColor = UIColor(red: 0.8, green: 0.2, blue: 0.2, alpha: 1.0)
+        labelJudul.setGayaTinta(ukuran: 26, berat: .bold, warna: TemaWarnaTinta.warnaTintaHitam)
         labelJudul.textAlignment = .center
         labelJudul.numberOfLines = 0
         kontainerDialog.addSubview(labelJudul)
         
         // Pesan
         labelPesan.text = pesan
-        labelPesan.font = UIFont.systemFont(ofSize: 17, weight: .medium)
-        labelPesan.textColor = .darkGray
+        labelPesan.setGayaTinta(ukuran: 17, berat: .medium, warna: TemaWarnaTinta.warnaTintaSedang)
         labelPesan.textAlignment = .center
         labelPesan.numberOfLines = 0
         kontainerDialog.addSubview(labelPesan)
@@ -295,17 +290,15 @@ class DialogKustomSederhana: UIView {
         kontainerDialog.alpha = 0
     }
     
-    private func buatTombol(judul: String, gaya: GayaTombol) -> UIButton {
-        let tombol = UIButton(type: .system)
+    private func buatTombol(judul: String, gaya: GayaTombol) -> TombolTinta {
+        let tombol = TombolTinta()
         tombol.setTitle(judul, for: .normal)
+        tombol.setGayaTintaDasar(warnaLatar: gaya.warna, warnaTeks: gaya.warnaTeks)
         tombol.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
-        tombol.setTitleColor(gaya.warnaTeks, for: .normal)
-        tombol.backgroundColor = gaya.warna
-        tombol.layer.cornerRadius = 14
         return tombol
     }
     
-    @objc private func tombolDiketuk(_ pengirim: UIButton) {
+    @objc private func tombolDiketuk(_ pengirim: TombolTinta) {
         let index = pengirim.tag
         
         sembunyikan { [weak self] in
@@ -320,11 +313,19 @@ class DialogKustomSederhana: UIView {
             make.edges.equalToSuperview()
         }
         
+        // 添加粒子效果
+        let center = tampilan.center
+        PembuatEfekVisualTingkatTinggi.buatEfekParticleBurst(
+            dariPosisi: center,
+            diView: tampilan,
+            warna: TemaWarnaTinta.warnaTintaHitam
+        )
+        
         UIView.animate(
-            withDuration: 0.4,
+            withDuration: 0.5,
             delay: 0,
-            usingSpringWithDamping: 0.7,
-            initialSpringVelocity: 0.5,
+            usingSpringWithDamping: 0.6,
+            initialSpringVelocity: 0.7,
             options: .curveEaseOut
         ) {
             self.kontainerDialog.transform = .identity

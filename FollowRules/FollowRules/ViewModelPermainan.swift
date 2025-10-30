@@ -2,14 +2,14 @@
 //  ViewModelPermainan.swift
 //  FollowRules
 //
-//  Game Screen ViewModel
+//  Game Screen ViewModel - Refactored with Functional Reactive Programming & Composition
 //
 
 import Foundation
 import Combine
 import UIKit
 
-// MARK: - ViewModel Permainan (Game ViewModel)
+// MARK: - ViewModel Permainan (Game ViewModel) - Refactored Implementation
 class ViewModelPermainan: ObservableObject {
     
     // MARK: - Published Properties
@@ -30,7 +30,8 @@ class ViewModelPermainan: ObservableObject {
     private let konfigurasi: KonfigurasiPermainan
     
     private var cancellables = Set<AnyCancellable>()
-    private var timerPublisher: AnyCancellable?
+    private let pengelolaTimer: PengelolaTimerPermainan
+    private let komposerStatus: KomposerStatusPermainan
     
     // MARK: - Initialization
     init(layananPermainan: ProtocolLayananPermainan,
@@ -39,6 +40,8 @@ class ViewModelPermainan: ObservableObject {
         self.layananPermainan = layananPermainan
         self.koordinatorAnimasi = koordinatorAnimasi
         self.konfigurasi = konfigurasi
+        self.pengelolaTimer = PengelolaTimerPermainan()
+        self.komposerStatus = KomposerStatusPermainan()
         
         konfigurasBindings()
         inisialisasiPermainan()
@@ -88,23 +91,26 @@ class ViewModelPermainan: ObservableObject {
     }
     
     func keluarPermainan() {
-        hentikanTimer()
+        pengelolaTimer.hentikan()
         _ = layananPermainan.prosesAksiPemain(.keluarPermainan)
     }
     
     func dapatkanWarnaLatar() -> UIColor {
-        return UIColor(red: 0.95, green: 0.95, blue: 0.90, alpha: 1.0)
+        return TemaWarnaTinta.warnaLatarUtama
     }
     
     func dapatkanWarnaHeader() -> UIColor {
-        return UIColor(red: 0.8, green: 0.2, blue: 0.2, alpha: 1.0)
+        return TemaWarnaTinta.warnaTintaHitam
     }
     
     // MARK: - Private Methods
     
     private func konfigurasBindings() {
+        let transformasiStatus = komposerStatus.buatTransformasiStatus()
+        
         layananPermainan.penerbitStatusPermainan
             .receive(on: DispatchQueue.main)
+            .map(transformasiStatus)
             .sink { [weak self] status in
                 self?.statusPermainan = status
             }
@@ -140,58 +146,101 @@ class ViewModelPermainan: ObservableObject {
         let snapshot = layananPermainan.dapatkanStatusSaatIni()
         
         DispatchQueue.main.async { [weak self] in
-            self?.statusPermainan = snapshot.status
-            self?.tingkatSekarang = snapshot.tingkatSekarang
-            self?.skorSekarang = snapshot.skorSekarang
-            self?.waktuTersisa = snapshot.waktuTersisa
-            self?.kartuSekarang = snapshot.kartuSekarang
-            self?.aturanSekarang = snapshot.aturanSekarang?.deskripsiTampilan ?? ""
-            self?.kartuTerpilih = snapshot.kartuTerpilih
+            guard let self = self else { return }
+            
+            self.statusPermainan = snapshot.status
+            self.tingkatSekarang = snapshot.tingkatSekarang
+            self.skorSekarang = snapshot.skorSekarang
+            self.waktuTersisa = snapshot.waktuTersisa
+            self.kartuSekarang = snapshot.kartuSekarang
+            self.aturanSekarang = snapshot.aturanSekarang?.deskripsiTampilan ?? ""
+            self.kartuTerpilih = snapshot.kartuTerpilih
         }
     }
     
     private func perbaruiUkuranKisi() {
-        if let kesulitan = konfigurasi.tingkatKesulitan {
-            ukuranKisi = kesulitan.rawValue
-        } else {
-            // Mode waktu dengan kesulitan dinamis
-            if skorSekarang >= 50 {
-                ukuranKisi = 5
-            } else if skorSekarang >= 20 {
-                ukuranKisi = 4
-            } else {
-                ukuranKisi = 3
-            }
-        }
+        let kalkulatorUkuran = KalkulatorUkuranKisi(konfigurasi: konfigurasi)
+        ukuranKisi = kalkulatorUkuran.hitung(tingkatSekarang: tingkatSekarang, skorSekarang: skorSekarang)
     }
     
     private func mulaiTimerWaktuJikaDiperlukan() {
         guard case .waktu = konfigurasi.mode else { return }
         
-        hentikanTimer()
+        pengelolaTimer.hentikan()
+        
+        pengelolaTimer.mulai(durasi: waktuTersisa ?? 120) { [weak self] waktuTersisa in
+            guard let self = self else { return }
+            
+            self.waktuTersisa = waktuTersisa
+            
+            if waktuTersisa <= 10 {
+                self.jenisAnimasi = .peringatanWaktu
+            }
+        }
+    }
+    
+    deinit {
+        pengelolaTimer.hentikan()
+    }
+}
+
+// MARK: - Komposer Status Permainan
+class KomposerStatusPermainan {
+    func buatTransformasiStatus() -> (StatusPermainan) -> StatusPermainan {
+        return { status in
+            return status
+        }
+    }
+}
+
+// MARK: - Pengelola Timer Permainan
+class PengelolaTimerPermainan {
+    private var timerPublisher: AnyCancellable?
+    private var callbackWaktu: ((TimeInterval) -> Void)?
+    private var waktuTersisaInternal: TimeInterval = 0
+    
+    func mulai(durasi: TimeInterval, callback: @escaping (TimeInterval) -> Void) {
+        hentikan()
+        
+        waktuTersisaInternal = durasi
+        self.callbackWaktu = callback
         
         timerPublisher = Timer.publish(every: 1.0, on: .main, in: .common)
             .autoconnect()
             .sink { [weak self] _ in
                 guard let self = self else { return }
                 
-                if let waktu = self.waktuTersisa, waktu > 0 {
-                    self.waktuTersisa = waktu - 1
-                    
-                    if waktu <= 10 {
-                        self.jenisAnimasi = .peringatanWaktu
-                    }
-                }
+                self.waktuTersisaInternal -= 1
+                self.callbackWaktu?(self.waktuTersisaInternal)
             }
     }
     
-    private func hentikanTimer() {
+    func hentikan() {
         timerPublisher?.cancel()
         timerPublisher = nil
-    }
-    
-    deinit {
-        hentikanTimer()
+        callbackWaktu = nil
     }
 }
 
+// MARK: - Kalkulator Ukuran Kisi
+class KalkulatorUkuranKisi {
+    private let konfigurasi: KonfigurasiPermainan
+    
+    init(konfigurasi: KonfigurasiPermainan) {
+        self.konfigurasi = konfigurasi
+    }
+    
+    func hitung(tingkatSekarang: Int, skorSekarang: Int) -> Int {
+        if let kesulitan = konfigurasi.tingkatKesulitan {
+            return kesulitan.rawValue
+        }
+        
+        if skorSekarang >= 50 {
+            return 5
+        } else if skorSekarang >= 20 {
+            return 4
+        } else {
+            return 3
+        }
+    }
+}

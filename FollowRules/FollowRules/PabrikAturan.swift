@@ -2,71 +2,220 @@
 //  PabrikAturan.swift
 //  FollowRules
 //
-//  Rule Factory with Strategy Pattern
+//  Rule Factory - Refactored with Chain of Responsibility & Builder Pattern
 //
 
 import Foundation
 
-// MARK: - Pabrik Aturan (Rule Factory)
+// MARK: - Pabrik Aturan (Rule Factory) - Refactored Implementation
 class PabrikAturan: ProtocolPembuatAturan {
     
     private let generatorAcak: GeneratorBilanganAcak
     private var riwayatAturanDibuat: [EntitasAturan] = []
+    private let rantaiPembuatAturan: RantaiPembuatAturan
     
     init(generatorAcak: GeneratorBilanganAcak = GeneratorAcakSistem()) {
         self.generatorAcak = generatorAcak
+        self.rantaiPembuatAturan = RantaiPembuatAturan(generatorAcak: generatorAcak)
     }
     
     func buatAturanBaru(untukKonteks konteks: KonteksPermainan) -> EntitasAturan {
-        let pembuatStrategiArray = dapatkanPembuatStrategiTersedia(konteks: konteks)
-        
-        // Pilih strategi secara acak
-        let indeksAcak = generatorAcak.angkaAcak(dalam: 0..<pembuatStrategiArray.count)
-        let pembuatStrategi = pembuatStrategiArray[indeksAcak]
-        
-        let aturan = pembuatStrategi.buat(dariKartu: konteks.kartuTersedia, kompleksitas: konteks.tingkatKompleksitas)
-        
-        // Simpan ke riwayat
+        let aturan = rantaiPembuatAturan.buatAturan(untukKonteks: konteks)
         riwayatAturanDibuat.append(aturan)
-        
         return aturan
     }
     
     func validasiAturan(_ aturan: EntitasAturan, terhadapKartu kartu: [EntitasKartu]) -> Bool {
-        // Pastikan aturan memiliki setidaknya satu kartu yang cocok
-        let kartuCocok = kartu.filter { aturan.kriteriaPemilihan($0) }
-        
-        // Aturan valid jika ada 1-n kartu yang cocok (bukan 0 atau semua)
-        return !kartuCocok.isEmpty && kartuCocok.count < kartu.count
-    }
-    
-    // MARK: - Private Methods
-    
-    private func dapatkanPembuatStrategiTersedia(konteks: KonteksPermainan) -> [StrategiPembuatAturan] {
-        var strategi: [StrategiPembuatAturan] = []
-        
-        // Strategi dasar selalu tersedia
-        strategi.append(StrategiHapusJenis())
-        strategi.append(StrategiHapusNilai())
-        strategi.append(StrategiSimpanJenis())
-        strategi.append(StrategiSimpanNilai())
-        
-        // Strategi lanjutan untuk tingkat lebih tinggi
-        if konteks.tingkatSekarang > 3 {
-            strategi.append(StrategiHapusKategori())
-            strategi.append(StrategiSimpanKategori())
-        }
-        
-        // Strategi kompleks untuk tingkat tinggi
-        if konteks.tingkatSekarang > 10 {
-            strategi.append(StrategiKondisiKompleks())
-        }
-        
-        return strategi
+        let validator = ValidatorAturan()
+        return validator.validasi(aturan: aturan, terhadapKartu: kartu)
     }
 }
 
-// MARK: - Protocol Strategi Pembuat Aturan
+// MARK: - Rantai Pembuat Aturan (Chain of Responsibility)
+class RantaiPembuatAturan {
+    private let generatorAcak: GeneratorBilanganAcak
+    private lazy var penanganPertama: PenanganPembuatAturan = {
+        return konfigurasiRantai()
+    }()
+    
+    init(generatorAcak: GeneratorBilanganAcak) {
+        self.generatorAcak = generatorAcak
+    }
+    
+    func buatAturan(untukKonteks konteks: KonteksPermainan) -> EntitasAturan {
+        return penanganPertama.tanganiPermintaan(konteks: konteks)
+    }
+    
+    private func konfigurasiRantai() -> PenanganPembuatAturan {
+        let penanganDasar = PenanganAturanDasar(generatorAcak: generatorAcak)
+        let penanganLanjutan = PenanganAturanLanjutan(generatorAcak: generatorAcak)
+        let penanganKompleks = PenanganAturanKompleks(generatorAcak: generatorAcak)
+        
+        penanganDasar.setPenanganBerikutnya(penanganLanjutan)
+        penanganLanjutan.setPenanganBerikutnya(penanganKompleks)
+        
+        return penanganDasar
+    }
+}
+
+// MARK: - Protocol Penangan Pembuat Aturan
+protocol PenanganPembuatAturan {
+    func tanganiPermintaan(konteks: KonteksPermainan) -> EntitasAturan
+    func setPenanganBerikutnya(_ penangan: PenanganPembuatAturan)
+}
+
+// MARK: - Penangan Aturan Dasar
+class PenanganAturanDasar: PenanganPembuatAturan {
+    private let generatorAcak: GeneratorBilanganAcak
+    private var penanganBerikutnya: PenanganPembuatAturan?
+    private let builderDasar: BuilderAturanDasar
+    
+    init(generatorAcak: GeneratorBilanganAcak) {
+        self.generatorAcak = generatorAcak
+        self.builderDasar = BuilderAturanDasar(generatorAcak: generatorAcak)
+    }
+    
+    func tanganiPermintaan(konteks: KonteksPermainan) -> EntitasAturan {
+        if konteks.tingkatSekarang <= 3 {
+            return builderDasar.bangunAturan(untukKonteks: konteks)
+        }
+        
+        return penanganBerikutnya?.tanganiPermintaan(konteks: konteks) ?? builderDasar.bangunAturan(untukKonteks: konteks)
+    }
+    
+    func setPenanganBerikutnya(_ penangan: PenanganPembuatAturan) {
+        penanganBerikutnya = penangan
+    }
+}
+
+// MARK: - Penangan Aturan Lanjutan
+class PenanganAturanLanjutan: PenanganPembuatAturan {
+    private let generatorAcak: GeneratorBilanganAcak
+    private var penanganBerikutnya: PenanganPembuatAturan?
+    private let builderLanjutan: BuilderAturanLanjutan
+    
+    init(generatorAcak: GeneratorBilanganAcak) {
+        self.generatorAcak = generatorAcak
+        self.builderLanjutan = BuilderAturanLanjutan(generatorAcak: generatorAcak)
+    }
+    
+    func tanganiPermintaan(konteks: KonteksPermainan) -> EntitasAturan {
+        if konteks.tingkatSekarang > 3 && konteks.tingkatSekarang <= 10 {
+            return builderLanjutan.bangunAturan(untukKonteks: konteks)
+        }
+        
+        return penanganBerikutnya?.tanganiPermintaan(konteks: konteks) ?? builderLanjutan.bangunAturan(untukKonteks: konteks)
+    }
+    
+    func setPenanganBerikutnya(_ penangan: PenanganPembuatAturan) {
+        penanganBerikutnya = penangan
+    }
+}
+
+// MARK: - Penangan Aturan Kompleks
+class PenanganAturanKompleks: PenanganPembuatAturan {
+    private let generatorAcak: GeneratorBilanganAcak
+    private var penanganBerikutnya: PenanganPembuatAturan?
+    private let builderKompleks: BuilderAturanKompleks
+    
+    init(generatorAcak: GeneratorBilanganAcak) {
+        self.generatorAcak = generatorAcak
+        self.builderKompleks = BuilderAturanKompleks(generatorAcak: generatorAcak)
+    }
+    
+    func tanganiPermintaan(konteks: KonteksPermainan) -> EntitasAturan {
+        if konteks.tingkatSekarang > 10 {
+            return builderKompleks.bangunAturan(untukKonteks: konteks)
+        }
+        
+        return penanganBerikutnya?.tanganiPermintaan(konteks: konteks) ?? builderKompleks.bangunAturan(untukKonteks: konteks)
+    }
+    
+    func setPenanganBerikutnya(_ penangan: PenanganPembuatAturan) {
+        penanganBerikutnya = penangan
+    }
+}
+
+// MARK: - Builder Aturan Dasar
+class BuilderAturanDasar {
+    private let generatorAcak: GeneratorBilanganAcak
+    private let daftarStrategi: [StrategiPembuatAturan]
+    
+    init(generatorAcak: GeneratorBilanganAcak) {
+        self.generatorAcak = generatorAcak
+        self.daftarStrategi = [
+            StrategiHapusJenis(),
+            StrategiHapusNilai(),
+            StrategiSimpanJenis(),
+            StrategiSimpanNilai()
+        ]
+    }
+    
+    func bangunAturan(untukKonteks konteks: KonteksPermainan) -> EntitasAturan {
+        let indeksAcak = generatorAcak.angkaAcak(dalam: 0..<daftarStrategi.count)
+        let strategi = daftarStrategi[indeksAcak]
+        return strategi.buat(dariKartu: konteks.kartuTersedia, kompleksitas: konteks.tingkatKompleksitas)
+    }
+}
+
+// MARK: - Builder Aturan Lanjutan
+class BuilderAturanLanjutan {
+    private let generatorAcak: GeneratorBilanganAcak
+    private let daftarStrategi: [StrategiPembuatAturan]
+    
+    init(generatorAcak: GeneratorBilanganAcak) {
+        self.generatorAcak = generatorAcak
+        self.daftarStrategi = [
+            StrategiHapusJenis(),
+            StrategiHapusNilai(),
+            StrategiSimpanJenis(),
+            StrategiSimpanNilai(),
+            StrategiHapusKategori(),
+            StrategiSimpanKategori()
+        ]
+    }
+    
+    func bangunAturan(untukKonteks konteks: KonteksPermainan) -> EntitasAturan {
+        let indeksAcak = generatorAcak.angkaAcak(dalam: 0..<daftarStrategi.count)
+        let strategi = daftarStrategi[indeksAcak]
+        return strategi.buat(dariKartu: konteks.kartuTersedia, kompleksitas: konteks.tingkatKompleksitas)
+    }
+}
+
+// MARK: - Builder Aturan Kompleks
+class BuilderAturanKompleks {
+    private let generatorAcak: GeneratorBilanganAcak
+    private let daftarStrategi: [StrategiPembuatAturan]
+    
+    init(generatorAcak: GeneratorBilanganAcak) {
+        self.generatorAcak = generatorAcak
+        self.daftarStrategi = [
+            StrategiHapusJenis(),
+            StrategiHapusNilai(),
+            StrategiSimpanJenis(),
+            StrategiSimpanNilai(),
+            StrategiHapusKategori(),
+            StrategiSimpanKategori(),
+            StrategiKondisiKompleks()
+        ]
+    }
+    
+    func bangunAturan(untukKonteks konteks: KonteksPermainan) -> EntitasAturan {
+        let indeksAcak = generatorAcak.angkaAcak(dalam: 0..<daftarStrategi.count)
+        let strategi = daftarStrategi[indeksAcak]
+        return strategi.buat(dariKartu: konteks.kartuTersedia, kompleksitas: konteks.tingkatKompleksitas)
+    }
+}
+
+// MARK: - Validator Aturan
+class ValidatorAturan {
+    func validasi(aturan: EntitasAturan, terhadapKartu kartu: [EntitasKartu]) -> Bool {
+        let kartuCocok = kartu.filter { aturan.kriteriaPemilihan($0) }
+        return !kartuCocok.isEmpty && kartuCocok.count < kartu.count
+    }
+}
+
+// MARK: - Protocol Strategi Pembuat Aturan (保持原有接口)
 protocol StrategiPembuatAturan {
     func buat(dariKartu kartu: [EntitasKartu], kompleksitas: Int) -> EntitasAturan
 }
@@ -79,7 +228,6 @@ class StrategiHapusJenis: StrategiPembuatAturan {
         let jenisTerpilih = Array(jenisKartuAngka.shuffled().prefix(jumlahJenis))
         
         guard !jenisTerpilih.isEmpty else {
-            // Fallback jika tidak ada kartu angka
             let jenisApapun = Array(Set(kartu.map { $0.jenis }).shuffled().prefix(1))
             return buatAturanHapusJenis(jenisTerpilih: jenisApapun)
         }
@@ -194,7 +342,6 @@ class StrategiHapusKategori: StrategiPembuatAturan {
             )
         }
         
-        // Fallback
         return StrategiHapusJenis().buat(dariKartu: kartu, kompleksitas: kompleksitas)
     }
 }
@@ -228,7 +375,6 @@ class StrategiSimpanKategori: StrategiPembuatAturan {
 // MARK: - Strategi: Kondisi Kompleks
 class StrategiKondisiKompleks: StrategiPembuatAturan {
     func buat(dariKartu kartu: [EntitasKartu], kompleksitas: Int) -> EntitasAturan {
-        // Contoh: Hapus kartu dengan nilai ganjil atau genap
         let ganjil = Bool.random()
         let deskripsi = ganjil ? "Remove all odd numbered tiles" : "Remove all even numbered tiles"
         
@@ -243,4 +389,3 @@ class StrategiKondisiKompleks: StrategiPembuatAturan {
         )
     }
 }
-
